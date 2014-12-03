@@ -1,0 +1,29 @@
+`timescale 1ns / 1ps
+
+module testbench;
+
+	reg [3:0] a, b;
+	reg [4:0] ctrl;
+	reg [3:0] aa;
+	reg clock;
+
+	acc_4bit acc (
+		.a(a), 
+		.b(b), 
+		.ctrl(ctrl), 
+		.aa(aa), 
+		.clk(clock)
+	);
+
+	initial 
+		begin
+			a = 0;
+			b = 1;
+			ctrl = 5'b01001;
+			cin_re = 1;
+			clock = 0;
+		end
+	always #50 clock = ~clock;
+	
+      
+endmodule

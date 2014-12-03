@@ -1,0 +1,65 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\FDU\study\Fundamentals of Digital Logic\pj2\simulation\modelsim
+vacc_4bit
+Z1 Ieg9nR3Ql<:4z2GF7CL@__0
+Z2 V@CknR;TT;SCfo?YbZ7POH1
+Z3 dE:\FDU\study\Fundamentals of Digital Logic\pj2\simulation\modelsim
+Z4 w1417618719
+Z5 8E:/FDU/study/Fundamentals of Digital Logic/pj2/acc_4bit.v
+Z6 FE:/FDU/study/Fundamentals of Digital Logic/pj2/acc_4bit.v
+L0 13
+Z7 OV;L;10.1e;51
+r1
+31
+Z8 o-vlog01compat -work work -O0
+Z9 !s92 -vlog01compat -work work {+incdir+E:/FDU/study/Fundamentals of Digital Logic/pj2} -O0
+!i10b 1
+Z10 !s100 QN`0eTi^NR;l[cSmBm@eU1
+!s85 0
+Z11 !s108 1417619622.841000
+Z12 !s107 E:/FDU/study/Fundamentals of Digital Logic/pj2/acc_4bit.v|
+Z13 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FDU/study/Fundamentals of Digital Logic/pj2|E:/FDU/study/Fundamentals of Digital Logic/pj2/acc_4bit.v|
+!s101 -O0
+valu_4bit
+Z14 IW=^M9`=kmci7LLAj>VlHi2
+Z15 V7h8zfk9K;An65JIc@P6UH2
+R3
+Z16 w1417611721
+Z17 8E:/FDU/study/Fundamentals of Digital Logic/pj2/alu_4bit.v
+Z18 FE:/FDU/study/Fundamentals of Digital Logic/pj2/alu_4bit.v
+L0 13
+R7
+r1
+31
+R8
+Z19 !s100 hLm_EKR^Ab>S;c3;8;mBz1
+Z20 !s108 1417619622.685000
+Z21 !s107 E:/FDU/study/Fundamentals of Digital Logic/pj2/alu_4bit.v|
+Z22 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FDU/study/Fundamentals of Digital Logic/pj2|E:/FDU/study/Fundamentals of Digital Logic/pj2/alu_4bit.v|
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vtestbench
+!i10b 1
+!s100 ZXzeNI6FgNSQG1KeBKWzP0
+Ie?1@OO0>22LP_D:LYN6KM1
+VhGfW:390DM[oDMzegDH9`2
+R3
+w1417619541
+8E:/FDU/study/Fundamentals of Digital Logic/pj2/testbench.v
+FE:/FDU/study/Fundamentals of Digital Logic/pj2/testbench.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1417619622.986000
+!s107 E:/FDU/study/Fundamentals of Digital Logic/pj2/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FDU/study/Fundamentals of Digital Logic/pj2|E:/FDU/study/Fundamentals of Digital Logic/pj2/testbench.v|
+!s101 -O0
+R8
+R9

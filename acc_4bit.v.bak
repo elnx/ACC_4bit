@@ -1,0 +1,42 @@
+//==================================================================================================
+//  Filename      : acc_4bit.v
+//  Created On    : 2014-12-03 20:00:11
+//  Last Modified : 2014-12-03 20:37:42
+//  Revision      : 
+//  Author        : elnx
+//  Email         : p4ngb0y@gmail.com
+//
+//  Description   : An accumulator built on my alu_4bit.
+//
+//
+//==================================================================================================
+`include "alu_4bit.v"
+module acc_4bit(ctrl, a, b, aa, clk);
+	input [3:0] a, b;
+	input [4:0]ctrl;//ctrl = {m, s}
+	input clk;//clock signal
+	output aa;
+	reg cout_re;
+	wire y_aa;
+	alu_4bit ALU (
+		.a(a), 
+		.b(b), 
+		.s(ctrl[3:0]), 
+		.m(ctrl[4]), 
+		.cin_re(1), 
+		.cout_re(cout_re), 
+		.y(y_aa)
+	);
+	always @(posedge clk) 
+		begin
+			if (cout_re == 0) 
+				begin
+					aa <= 0;
+					a <= aa;
+				end
+			else 
+				begin
+					aa <= y_aa;
+					a <= aa;
+				end
+		end
