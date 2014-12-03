@@ -10,14 +10,16 @@
 //
 //
 //==================================================================================================
-module acc_4bit(ctrl, b, aa, clk);
+module acc_4bit(ctrl, b, aa, clk, cout);
 	input [3:0] b;
 	input [4:0] ctrl;//ctrl = {m, s}
 	input clk;//clock signal
 	output [3:0] aa;
+	output cout;
 	wire [3:0] aa;
 	wire cout_re;
 	reg [3:0] a = 4'b0000;
+	assign cout = ~cout_re;
 	alu_4bit ALU (
 		.a(a), 
 		.b(b), 

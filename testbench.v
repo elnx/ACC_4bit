@@ -6,12 +6,14 @@ module testbench;
 	reg [4:0] ctrl;
 	reg clock;
 	wire [3:0] aa;
+	wire cout;
 
 	acc_4bit acc (
 		.b(b), 
 		.ctrl(ctrl), 
 		.aa(aa), 
-		.clk(clock)
+		.clk(clock),
+		.cout(cout)
 	);
 
 	initial 

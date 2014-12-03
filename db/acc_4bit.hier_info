@@ -8,14 +8,15 @@ b[0] => alu_4bit:ALU.b[0]
 b[1] => alu_4bit:ALU.b[1]
 b[2] => alu_4bit:ALU.b[2]
 b[3] => alu_4bit:ALU.b[3]
-aa[0] << alu_4bit:ALU.y[0]
-aa[1] << alu_4bit:ALU.y[1]
-aa[2] << alu_4bit:ALU.y[2]
-aa[3] << alu_4bit:ALU.y[3]
+aa[0] <= alu_4bit:ALU.y[0]
+aa[1] <= alu_4bit:ALU.y[1]
+aa[2] <= alu_4bit:ALU.y[2]
+aa[3] <= alu_4bit:ALU.y[3]
 clk => a[0].CLK
 clk => a[1].CLK
 clk => a[2].CLK
 clk => a[3].CLK
+cout <= alu_4bit:ALU.cout_re
 
 
 |acc_4bit|alu_4bit:ALU
